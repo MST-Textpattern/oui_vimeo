@@ -1,0 +1,17 @@
+#Default language, en-us, en-gb
+#@admin
+oui_player_provider_vimeo => Vimeo
+oui_player_vimeo => Vimeo player (oui_player_vimeo)
+oui_player_vimeo_prefs => Display the Vimeo player prefs
+oui_player_vimeo_width => Player width
+oui_player_vimeo_height => Player height
+oui_player_vimeo_ratio => Player ratio by default
+oui_player_vimeo_api => Enable the player JS API
+oui_player_vimeo_autopause => Automatic pausing when another video is playing
+oui_player_vimeo_autoplay => Automatic playing
+oui_player_vimeo_badge => Display the badge
+oui_player_vimeo_loop => Replay the video once finished
+oui_player_vimeo_title => Display the video title
+oui_player_vimeo_byline => Display the video author
+oui_player_vimeo_color => Preferred colour for UI player elements
+oui_player_vimeo_portrait => Display the author avatar

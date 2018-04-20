@@ -1,0 +1,80 @@
+h1. oui_player_vimeo
+
+A Vimeo extension for oui_player.
+See the oui_player help for global config/tags informations.
+
+h2. Plugin requirements
+
+oui_player's minimum requirements:
+
+* "Textpattern CMS":http://textpattern.com/ 4.6+.
+* "oui_player":https://github.com/oui-textpattern/oui_player/ 2.+.
+
+h2. Recognised values for the @play@ attribute
+
+* *ID* (using @vimeo@ as provider.)
+* http(s)://vimeo.com/[*ID*]
+* http(s)://player.vimeo.com/video/[*ID*]
+
+h2. Player size
+
+- @width@ :=
+The width of the player in pixels.
+*Default:* related plugin pref
+*Initial:* @640@
+*valid:* integer =:
+- @height@ :=
+*Default:* related plugin pref
+*Initial:* none
+*valid:* integer
+The height of the player in pixels. =:
+- @ratio@ :=
+The ratio used to calculate the missing value for the width or the height.
+*Default:* related plugin pref
+*Initial:* @16:9@
+*valid:* integer[@:@]integer =:
+
+h2. Player parameters (aplhabetical order)
+
+- @api@ :=
+Enables or disables "the javascript player api":https://github.com/vimeo/player.js.
+*Default:* related plugin pref
+*Initial:* @0@
+*valid:* @0@ or @1@ =:
+- @autopause@ :=
+Enables or disables pausing this video when another video is played.
+*Default:* related plugin pref
+*Initial:* @1@
+*valid:* @0@ or @1@ =:
+- @autoplay@ :=
+Play the video automatically on load. Note that this won’t work on some devices.
+*Default:* related plugin pref
+*Initial:* @0@
+*valid:* @0@ or @1@ =:
+- @byline@ :=
+Show the user’s byline on the video.
+*Default:* related plugin pref
+*Initial:* @1@
+*valid:* @0@ or @1@ =:
+- @color@ :=
+Specify the color of the video controls. Make sure that you don’t include the #.
+*Default:* related plugin pref
+*Initial:* @00adef@
+*valid:* a hexa color value =:
+- @loop@ :=
+Play the video again when it reaches the end.
+*Default:* related plugin pref
+*Initial:* @0@
+*valid:* @0@ or @1@ =:
+- @portrait@ :=
+Show the user’s portrait on the video.
+*Default:* related plugin pref
+*Initial:* @1@
+*valid:* @0@ or @1@ =:
+- @title@ :=
+Show the title on the video.
+*Default:* related plugin pref
+*Initial:* @1@
+*valid:* @0@ or @1@ =:
+
+p(alert-block information). %(ui-icon ui-icon-info).% More informations on "this Vimeo webpage":https://developer.vimeo.com/player/embedding.
