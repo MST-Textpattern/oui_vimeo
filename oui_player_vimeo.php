@@ -74,10 +74,6 @@ namespace Oui\Player {
             );
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_vimeo')) {
-            Vimeo::getInstance();
-        }
+        register_callback('Oui\Player\Vimeo::getProvider', 'oui_player', 'plug_providers');
     }
 }
