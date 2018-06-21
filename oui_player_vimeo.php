@@ -73,6 +73,15 @@ namespace Oui\Player {
                 ),
             );
         }
+    }
+}
 
+namespace {
+    function oui_vimeo($atts) {
+        return oui_player(array_merge(array('provider' => 'vimeo'), $atts));
+    }
+
+    function oui_if_vimeo($atts, $thing) {
+        return oui_if_player(array_merge(array('provider' => 'vimeo'), $atts), $thing);
     }
 }
