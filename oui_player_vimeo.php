@@ -74,6 +74,5 @@ namespace Oui\Player {
             );
         }
 
-        register_callback('Oui\Player\Vimeo::getProvider', 'oui_player', 'plug_providers');
     }
 }
