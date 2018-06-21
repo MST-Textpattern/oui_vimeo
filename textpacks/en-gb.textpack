@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_vimeo => Vimeo
-oui_player_vimeo => Vimeo player (oui_player_vimeo)
-oui_player_vimeo_prefs => Display the Vimeo player prefs
+oui_player_vimeo => Vimeo player
+oui_player_vimeo_prefs => Display the Vimeo player preferences
 oui_player_vimeo_width => Player width
 oui_player_vimeo_height => Player height
 oui_player_vimeo_ratio => Player ratio by default
