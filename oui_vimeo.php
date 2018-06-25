@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_vimeo,
+ * This file is part of oui_vimeo,
  * a oui_player v2+ extension to easily embed
  * Vimeo customizable video players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_vimeo
+ * https://github.com/NicolasGraph/oui_vimeo
  *
  * Copyright (C) 2018 Nicolas Morand
  *
