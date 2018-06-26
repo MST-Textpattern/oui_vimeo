@@ -43,6 +43,17 @@ namespace Oui\Player {
             );
             protected static $src = '//player.vimeo.com/';
             protected static $glue = array('video/', '?', '&amp;');
+            protected static $dims = array(
+                'width'     => array(
+                    'default' => '640',
+                ),
+                'height'    => array(
+                    'default' => '360',
+                ),
+                'ratio'     => array(
+                    'default' => '',
+                ),
+            );
             protected static $params = array(
                 'api' => array(
                     'default' => '0',
