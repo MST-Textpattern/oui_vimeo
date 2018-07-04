@@ -36,10 +36,8 @@ namespace Oui {
         class Vimeo extends Provider
         {
             protected static $patterns = array(
-                'video' => array(
-                    'scheme' => '#^(http|https)://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
-                    'id'     => '5',
-                ),
+                'scheme' => '#^(http|https)://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
+                'id'     => '5',
             );
             protected static $src = '//player.vimeo.com/';
             protected static $glue = array('video/', '?', '&amp;');
