@@ -44,15 +44,9 @@ namespace Oui {
             protected static $src = '//player.vimeo.com/';
             protected static $glue = array('video/', '?', '&amp;');
             protected static $dims = array(
-                'width'     => array(
-                    'default' => '640',
-                ),
-                'height'    => array(
-                    'default' => '360',
-                ),
-                'ratio'     => array(
-                    'default' => '',
-                ),
+                'width'  => '640',
+                'height' => '360',
+                'ratio'  => '',
             );
             protected static $params = array(
                 'api' => array(
