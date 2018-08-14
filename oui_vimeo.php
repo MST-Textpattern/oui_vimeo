@@ -29,57 +29,56 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Vimeo extends Provider
-        {
-            protected static $patterns = array(
-                'scheme' => '#^(http|https)://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
-                'id'     => '5',
-            );
-            protected static $src = '//player.vimeo.com/';
-            protected static $glue = array('video/', '?', '&amp;');
-            protected static $dims = array(
-                'width'  => '640',
-                'height' => '360',
-                'ratio'  => '',
-            );
-            protected static $params = array(
-                'api' => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'autopause' => array(
-                    'default' => '1',
-                    'valid'   => array('0', '1'),
-                ),
-                'autoplay'  => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'byline'    => array(
-                    'default' => '1',
-                    'valid'   => array('0', '1'),
-                ),
-                'color'     => array(
-                    'default' => '#00adef',
-                    'valid'   => 'color',
-                ),
-                'loop'      => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'portrait'  => array(
-                    'default' => '1',
-                    'valid'   => array('0', '1'),
-                ),
-                'title'     => array(
-                    'default' => '1',
-                    'valid'   => array('0', '1'),
-                ),
-            );
-        }
+    class Vimeo extends Provider
+    {
+        protected static $srcBase = '//player.vimeo.com/';
+        protected static $srcGlue = array('video/', '?', '&amp;');
+        protected static $iniDims = array(
+            'width'  => '640',
+            'height' => '360',
+            'ratio'  => '',
+        );
+        protected static $iniParams = array(
+            'api' => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'autopause' => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+            'autoplay'  => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'byline'    => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+            'color'     => array(
+                'default' => '#00adef',
+                'valid'   => 'color',
+            ),
+            'loop'      => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'portrait'  => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+            'title'     => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+        );
+        protected static $mediaPatterns = array(
+            'scheme' => '#^https?://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
+            'id'     => '4',
+        );
     }
 }
