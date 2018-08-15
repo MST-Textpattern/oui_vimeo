@@ -6,6 +6,7 @@ oui_player_vimeo_prefs => Afficher les préférences du lecteur Vimeo
 oui_player_vimeo_width => Largeur du lecteur
 oui_player_vimeo_height => Hauteur du lecteur
 oui_player_vimeo_ratio => Ratio utilisé en l'absence de l'une des dimensions
+oui_player_vimeo_responsive => Rendre les lecteurs adaptatifs à partir des dimensions fournies
 oui_player_vimeo_api => Activer l'API JS du lecteur
 oui_player_vimeo_autopause => Pause automatique
 oui_player_vimeo_autoplay => Lecture automatique
