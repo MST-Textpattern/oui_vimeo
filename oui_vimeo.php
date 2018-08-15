@@ -38,9 +38,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//player.vimeo.com/';
         protected static $srcGlue = array('video/', '?', '&amp;');
         protected static $iniDims = array(
-            'width'  => '640',
-            'height' => '360',
-            'ratio'  => '',
+            'width'      => '640',
+            'height'     => '360',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $iniParams = array(
             'api' => array(
