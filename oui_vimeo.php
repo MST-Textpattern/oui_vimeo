@@ -33,8 +33,11 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Vimeo extends Player\Provider
+    class Vimeo extends Player\Oembed
     {
+        protected static $endPoint = 'https://vimeo.com/api/oembed.json?url=';
+        protected static $URLBase = 'http://vimeo.com/';
+
         protected static $srcBase = '//player.vimeo.com/';
         protected static $srcGlue = array('video/', '?', '&amp;');
         protected static $iniDims = array(
