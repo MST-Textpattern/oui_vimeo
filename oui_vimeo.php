@@ -50,38 +50,71 @@ if (class_exists('Oui\Player\OEmbed')) {
             ),
         );
         protected static $iniParams = array(
-            'api' => array(
+            'api'         => array(
                 'default' => '0',
                 'valid'   => array('0', '1'),
             ),
-            'autopause' => array(
+            'autopause'   => array(
                 'default' => '1',
                 'valid'   => array('0', '1'),
             ),
-            'autoplay'  => array(
+            'autoplay'    => array(
                 'default' => '0',
                 'valid'   => array('0', '1'),
             ),
-            'byline'    => array(
+            // 'background'  => array(
+            //     'default' => '0',
+            //     'valid'   => array('0', '1'),
+            // ),
+            'byline'      => array(
                 'default' => '1',
                 'valid'   => array('0', '1'),
             ),
-            'color'     => array(
+            'color'       => array(
                 'default' => '#00adef',
                 'valid'   => 'color',
             ),
-            'loop'      => array(
+            'dnt'         => array(
                 'default' => '0',
                 'valid'   => array('0', '1'),
             ),
-            'portrait'  => array(
+            // 'fun'         => array(
+            //     'default' => '1',
+            //     'valid'   => array('0', '1'),
+            // ),
+            'loop'        => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'muted'       => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'playsinline' => array(
                 'default' => '1',
                 'valid'   => array('0', '1'),
             ),
-            'title'     => array(
+            'portrait'    => array(
                 'default' => '1',
                 'valid'   => array('0', '1'),
             ),
+            // 'quality'     => array(
+            //     'default' => 'auto',
+            //     'valid'   => array('auto', '360p', '540p', '720p', '1080p', '2k', '4k'),
+            // ),
+            // 'speed'       => array(
+            //     'default' => '0',
+            //     'valid'   => array('0', '1'),
+            // ),
+            'title'       => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+            'transparent' => array(
+                'default' => '1',
+                'valid'   => array('0', '1'),
+            ),
+            '#t'          => '0m' // TODO Should not require some glue…
         );
         protected static $mediaPatterns = array(
             'scheme' => '#^https?://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
