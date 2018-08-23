@@ -147,7 +147,7 @@ Show the title on the video. =:
 @0@ or @1@; initially set to @1@.
 Enable transparent iframe background; @0@ sets a black background. =:
 - @#t@ :=
-string; @0m@.
+string; @0m@. *Not supported yet*
 Video playing time starting point. =:
 
 h6. Plus account or higher

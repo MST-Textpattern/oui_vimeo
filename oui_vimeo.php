@@ -114,7 +114,7 @@ if (class_exists('Oui\Player\OEmbed')) {
                 'default' => '1',
                 'valid'   => array('0', '1'),
             ),
-            '#t'          => '0m' // TODO Should not require some glue…
+            // '#t'          => '0m' // TODO Do not uncomment for Plus account or higher.
         );
         protected static $mediaPatterns = array(
             'scheme' => '#^https?://((player\.vimeo\.com/video)|(vimeo\.com))/(\d+)$#i',
